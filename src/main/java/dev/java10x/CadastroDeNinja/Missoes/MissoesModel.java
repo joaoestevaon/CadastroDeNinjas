@@ -10,7 +10,7 @@ import java.util.List;
 @Table(name = "tb_missoes")
 @NoArgsConstructor
 @AllArgsConstructor
-@Data
+@Dafta
 public class MissoesModel {
 
     @Id
