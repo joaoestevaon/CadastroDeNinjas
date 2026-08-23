@@ -10,16 +10,18 @@ import java.util.List;
 @Table(name = "tb_missoes")
 @NoArgsConstructor
 @AllArgsConstructor
-@Dafta
+@Data
 public class MissoesModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(name = "nome")
     private String nome;
 
     //TODO: criar um ENUM: DificuldadeEnum. Mudar "dificuldade para o tipo DificuldadeEnum.
+    @Column(name = "dificuldade")
     private String dificuldade;
 
     //Uma missao pode ter vario ninjas
