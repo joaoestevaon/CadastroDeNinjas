@@ -6,22 +6,22 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("missoes")
 public class MissoesController {
 
-    @PostMapping("/criarmissoes")
+    @PostMapping("/criar")
     public String criarMissoes(){
         return "Criando missoes";
     }
 
-    @GetMapping("/listarmissoes")
+    @GetMapping("/listar")
     public String listarMissoes(){
         return "Listando missoes";
     }
 
-    @PutMapping("/alterarmissoes")
+    @PutMapping("/alterar")
     public String alterarMissoesPorId(){
         return "Missao alterada com sucesso";
     }
 
-    @DeleteMapping("/deletarmissoes")
+    @DeleteMapping("/deletar")
     public String deletarMissoesPorId(){
         return "Missao deletada com sucesso";
     }
