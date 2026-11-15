@@ -20,8 +20,9 @@ public class NinjaService {
     }
 
     //Listar Ninja Por Id
-    public Optional<NinjaModel> listarNinjasId(Long id){
-        return ninjaRespository.findById(id);
+    public NinjaModel listarNinjasId(Long id){
+        Optional<NinjaModel> ninjaPorId = ninjaRespository.findById(id);
+        return ninjaPorId.orElse(null);
     }
 
 }
